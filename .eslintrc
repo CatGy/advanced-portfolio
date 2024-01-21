@@ -1,0 +1,8 @@
+{
+  "plugins": [
+    "@nuxtjs/security-node"
+  ],
+  "extends": [
+      "plugin:security-node/recommended"
+  ]
+}
