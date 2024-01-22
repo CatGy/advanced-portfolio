@@ -4,7 +4,8 @@
     <a href="javascript:void(0);" class="icon" @click="open_menu">
       <img class="burger" src="/assets/images/icons/bars-solid.svg" alt="hamburger menu icon">
     </a>
-    <ul :class="{
+    
+    <ul v-if="!inMaintenance" :class="{
       'menu': true,
       'slide-in': burgerMenuOpen,
       'slide-out': !burgerMenuOpen
@@ -26,7 +27,12 @@
 
 <script setup lang="ts">
 const burgerMenuOpen = ref(false);
-
+const props = defineProps({
+  inMaintenance: {
+    type: Boolean,
+    required: true
+  }
+});
 function open_menu() { burgerMenuOpen.value = !burgerMenuOpen.value; }
 
 </script>

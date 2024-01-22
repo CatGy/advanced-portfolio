@@ -20,6 +20,7 @@
     "@dargmuesli/nuxt-cookie-control": "^7.2.3",
     "@nuxtjs/strapi": "^1.10.1",
     "dotenv": "^16.3.1",
+    "nuxt-maintenance-mode": "^0.3.1",
     "vue-toastification": "^2.0.0-rc.5"
   }
 }

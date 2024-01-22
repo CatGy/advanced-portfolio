@@ -1,7 +1,7 @@
 <template>
   <div>
     <NuxtLayout>
-      <Navbar nav={nav} />
+      <Navbar nav={nav} :inMaintenance="true"/>
       <NuxtPage/>
     </NuxtLayout>
   </div>
